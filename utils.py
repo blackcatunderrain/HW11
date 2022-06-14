@@ -6,8 +6,7 @@ FILENAME = "candidates.json"
 def load_candidates(filename: str) -> list[dict]:
     """Загружаем JSON из файла"""
     with open(filename, encoding='UTF-8') as file:
-        data = json.load(file)
-    return data
+        return json.load(file)
 
 
 def get_candidates() -> list[dict]:
